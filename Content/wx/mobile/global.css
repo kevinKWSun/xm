@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body{font-family: "微软雅黑"; color:#555; background-color:#F2F3F7;width:100%;max-width:640px;margin:0 auto;padding:0;}
+@media screen and (min-width:1440px) and (max-width:1600px){
+    input,textarea,select,small,a{font-size:16px;}
+}
+@media screen and (min-width:1440px){ 
+    input,textarea,select,small,a{font-size:16px;}
+}
+@media screen and (max-width:1024px){    
+    input,textarea,select,small,a{font-size:16px;}
+}
+@media screen and (max-width:768px){
+    input,textarea,select,small,a{font-size:16px;}
+}
+@media screen and (max-width:360px){
+    input,textarea,select,small,a{font-size:14px;}
+}
+@media screen and (max-width:320px){
+    input,textarea,select,small,a{font-size:14px;}
+}
+/* 去除iPhone中默认的input样式 */
+input{/* -webkit-appearance:none; */width:41%; resize: none;font-size:16px;color:#333;}
+
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+    display: block;
+}
+/* 图片自适应 */
+img {
+    max-width: 100%;
+    height: auto;
+    width:auto\9; /* ie8 */
+    -ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+*:focus {
+    outline:none;
+}
+/* 清零 */
+div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{margin:0; padding:0; border:none;font-family:'微软雅黑'}
+em,i{font-style:normal;font-size:14px;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#333; /*font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;*/}
+/*a:hover{color:#969696; text-decoration:none;}*/
+ul,ol,li{list-style:none;}
+fieldset,img{border: none;}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+caption, th {
+    text-align:left;
+}
+*{box-sizing:border-box;}
+input,textarea{padding-left:5px;}
+.clear{clear:both;}
+.foot{position: fixed;bottom:0;z-index: 1;width:100%;max-width: 640px;margin:0 auto; background:#ffffff}
+.foot .ig01{background: url(images/recommend_s.png) no-repeat;}
+.foot .ig-01{background: url(images/recommend_a.png) no-repeat;}
+.foot .ig02{background: url(images/product_s.png) no-repeat;}
+.foot .ig-02{background: url(images/product.png) no-repeat;}
+.foot .ig04{background: url(images/news.png) no-repeat;}
+.foot .ig-04{background: url(images/news_s.png) no-repeat;}
+.foot .ig05{background: url(images/user.png) no-repeat;}
+.foot .ig-05{background: url(images/user_s.png) no-repeat;}
+.foot span{margin:5px 0 0 0;width:30px;height:30px;}
+.foot p{font-size: 14px;}
+.foot a{display:block}
+.foot li {
+    text-align: center;width:25%;
+}

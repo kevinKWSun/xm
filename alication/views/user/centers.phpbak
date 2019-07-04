@@ -1,0 +1,237 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="zh-cn" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0,initial-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>系统主页</title>
+    <link href="/Content/layui/css/layui.css" rel="stylesheet" />
+    <link href="/Content/fhuaui/css/fhuaui.css" rel="stylesheet" />
+    <link href="/Content/Font-Awesome/css/font-awesome.css" rel="stylesheet" />
+    <script src="/Content/layui/layui.js"></script>
+</head>
+<body>
+    <div class="main-wrap clearfix">
+        <div class="main-wrap-left">
+            <div class="head-box clearfix">
+                <div class="img-box">
+                    <img src="/Content/img/fhua/91a56783a7056f2994023e5a81e63b28.png" width="32" height="32">
+                </div>
+                <div class="inner">
+                    <h3>Hi，<?php echo $name;?></h3>
+                    <p>姓名：<?php echo $rname;?></p>
+                </div>
+                <!-- <div class="inner">
+                    <h3></h3>
+                        <p></p>
+                        <p>
+                            <a class="layui-btn layui-btn-small" data-title="退出全屏" data-icon="fa fa-plus" id="exit">
+                                <i class="fa fa-sign-out"></i>退出全屏
+                            </a>
+                        </p>
+                </div> -->
+            </div>
+
+            <div class="index_show_area">
+                <div class="index_tap added">
+                    <ul class="inner">
+                        <li class="grid_item size1of2 index_tap_item added_message">
+                            <a href="javascript:;">
+                                <span class="tap_inner">
+
+                                    <em class="number">100</em>
+                                    <strong class="title">数据</strong>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="grid_item size1of2  index_tap_item added_fans">
+                            <a href="javascript:;">
+                                <span class="tap_inner no_extra">
+                                    
+                                    <em class="number">0</em>
+                                    <strong class="title">数据</strong>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="grid_item size1of2 index_tap_item added_fans">
+                            <a href="javascript:;">
+                                <span class="tap_inner no_extra">
+                                    
+                                    <em class="number">0</em>
+                                    <strong class="title">数据</strong>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="index_tap total">
+                    <ul class="inner">
+                        <li class="index_tap_item total_fans extra">
+                            <a href="javascript:;">
+                                <span class="tap_inner">
+                                    
+                                    <em class="number">0</em>
+                                    <strong class="title">近7天数据</strong>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="index_tap_item total_fans extra">
+                            <a href="javascript:;">
+                                <span class="tap_inner">
+                                    
+                                    <em class="number">0</em>
+                                    <strong class="title">近7天数据</strong>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <fieldset class="layui-elem-field layui-field-title">
+                <legend>最新数据</legend>
+            </fieldset>
+            <!-- <table class="layui-table" lay-skin="line">
+                <colgroup>
+                    <col width="140">
+                    <col width="60">
+                    <col width="100">
+                    <col width="80">
+                    <col width="146">
+                    <col width="120">
+                    <col width="80">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                    </tr>
+                </thead>
+                <tbody id="msg">
+                        <tr>
+                            <td class="nodata" colspan="8">暂无数据！</td>
+                        </tr>
+                </tbody>
+            </table> -->
+            <div class="layui-elem-field" style='over-flow:hidden;'>
+                <div id='main' style="width: 100%;height:400px;"><center>Loading...</center></div>
+            </div>
+        </div>
+        <div class="main-wrap-right">
+            <fieldset class="layui-elem-field layui-field-title">
+                <legend>通知公告-推送信息</legend>
+            </fieldset>
+            <div class="layui-field-box">
+                <div class="layui-collapse HardwareInfo" lay-accordion="">
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title"><i class="fa fa-bullhorn"></i><a>K刷多国境外机火热招代理中！</a></h2>
+                        <div class="layui-colla-content layui-show">
+                            <p>K刷多国境外机: 分润返现不用月结！不用周结！不用日结！不用够500才能提现！做境外机，我就认K刷。0月租，0管理费，10元以上就可以提现，年前只扶持10位代理</p>
+                        </div>
+                    </div>
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title"><i class="fa fa-bullhorn"></i><a>广发提额到23万，看经验分享</a></h2>
+                        <div class="layui-colla-content">
+                            <p>欢迎大家实测招行提额大法：在各行中，招商提额的方式最简单了，本文来讲讲提额最给力的银行：广发银行。</p>
+                        </div>
+                    </div>
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title"><i class="fa fa-bullhorn"></i><a>境外机放大招，最高返款80％，回款实时到帐</a></h2>
+                        <div class="layui-colla-content">
+                            <p>境外机放大招，最高返款80％，回款实时到帐，17年17（一起）冲量，对于那些找不到一手货源，而且有门槛的朋友，你们的福音来了，K刷境外机总部期待你们的加入</p>
+                        </div>
+                    </div>
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title"><i class="fa fa-bullhorn"></i><a>浦发银行境外刷卡返10%刷卡金，最高可享5000元</a></h2>
+                        <div class="layui-colla-content">
+                            <p>这样的季节，除了带代理们赚钱和介绍赚钱项目给大家，其他的我什么都没有</p>
+                        </div>
+                    </div>
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title"><i class="fa fa-bullhorn"></i><a>民生银联卡境外商户消费满额立减</a></h2>
+                        <div class="layui-colla-content">
+                            <p>民生银联信用卡精选美国、日本、港澳、泰国、新加坡、澳洲、新西兰等热门旅行目的地, 900多家知名品牌门店，邀您享受消费满减优惠！优惠活动期间，持卡人在民生信用卡微信公众号活动页面下载商户优惠券，在活动商户门店刷民生银联信用卡（卡号以62开头）单笔消费满额，经验证使用优惠券（二维码或条形码）可享受立减优惠。快来微信扫码，享受真金白银的实惠！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Content/myjs/global.js"></script>
+    <script src="/Content/myjs/list.js"></script>
+    <script src="/Content/myjs/log.js"></script>
+    <script src="/Content/echarts.min.js"></script>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+        option = null;
+        myChart.setOption({
+            title: {
+                text: ''
+            },
+            tooltip: {//trigger: 'axis'
+            },
+            legend: {
+                data:['数据','数据1']
+            },
+            grid: {
+                left: '1%',
+                right: '1%',
+                bottom: '1%',
+                containLabel: true
+            },
+            xAxis: {
+                data: ["1","2","3","4","5","6","7","8","9","10","11","12"]
+            },
+            yAxis: {},
+            series: [{
+                name: '数据',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20, 5, 20, 36, 10, 15, 4]
+            },{
+                name: '数据1',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20, 5, 20, 36, 10, 15, 4]
+            }]
+        });
+        //异步
+        // function fetchData(cb) {
+        //     setTimeout(function () {
+        //         cb({
+        //             categories: ["1","2","3","4","5","6","7","8","9","10","11","12"],
+        //             data: [5, 20, 36, 10, 10, 20, 5, 20, 36, 10, 15, 4],
+        //             data1: [5, 20, 36, 10, 10, 20, 5, 20, 36, 10, 15, 4]
+        //         });
+        //     }, 1000);
+        // }
+        // myChart.showLoading();
+        // fetchData(function (data) {
+        //     myChart.hideLoading();
+        //     myChart.setOption({
+        //         xAxis: {
+        //             data: data.categories
+        //         },
+        //         series: [{
+        //             name: '销量',
+        //             data: data.data
+        //         },{
+        //             name: '销量1',
+        //             data: data.data1
+        //         }]
+        //     });
+        // });
+        
+    </script>
+</body>
+</html>

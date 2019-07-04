@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>烟台畜牧微观网</title>
+		<meta name="keywords" content="烟台畜牧微观网">
+		<meta name="description" content="烟台畜牧微观网">
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<link href="./layui.css" rel="stylesheet" type="text/css">
+		<link href="./mobile/need/layer.css" rel="stylesheet" type="text/css">
+		<link href="./style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="./mobile/layer.js"></script>
+		<script type="text/javascript" src="/Content/js/jquery-3.1.1.min.js"></script>
+	</head>
+<body>
+	<section>
+		<div class="mainbg"><img src="images/jsp.jpg" /></div>
+		<ul class="mainmenu">
+			<li><a href="./list.html"><p><img src="images/14.png"><span>官方兽医签到</span></p></a></li>
+			<li><a href="./lists.html"><p><img src="images/1.png"><span>散养户登记</span></p></a></li>
+		</ul>
+	</section>
+	<div class="top_bar">
+		<nav>
+			<ul id="top_menu" class="top_menu">
+				<li><a href="javascript:;"><img src="images/recommend_a.png" width='30'><label>首页</label></a></li>
+				<!-- <li><a href="javascript:;"><img src="images/user.png" width='30'><label>用户</label></a></li> -->
+			</ul>
+		</nav>
+	</div>
+	<script>
+	$(function(){
+		layer.open({
+			content: 'hello layer'
+			,skin: 'msg'
+			,time: 2
+		});
+		layer.open({
+			content: '移动版和PC版不能同时存在同一页面'
+			,btn: '我知道了'
+		});
+		layer.open({
+			content: '您确定要刷新一下本页面吗？'
+			,btn: ['刷新', '不要']
+			,yes: function(index){
+			  location.reload();
+			  layer.close(index);
+			}
+		});
+	});
+	</script>
+</body>
+</html>

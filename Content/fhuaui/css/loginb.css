@@ -1,0 +1,55 @@
+﻿
+/*登录样式*/
+body { height: 100%; margin: 0; padding: 0; overflow: hidden; background: #e9f1f5; }
+body .header .layui-nav .layui-nav-item { margin: 0px; border-left: 1px solid #1C2735; }
+.header { position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 65px; border-bottom: 1px solid #2F4056; background-color: #2F4056; color: #fff; margin-bottom: 10px; }
+.header .layui-nav { position: absolute; margin-left: 60px; padding: 0; background: none; }
+.login-header .sitename { width: 300px; float: left; }
+.login-header .login-top-menu { right: 20px; }
+.login-header .login-top-bg { max-width: 992px; display: block; /*background: #e9f1f5 url("../img/dj-content-wrap-after-index-tit.png") no-repeat 5% 0px;*/ height: 66px; }
+.login-header .sitename h2 { display: block; margin-left: 50px; height: 66px; line-height: 66px; font-size: 20px; font-weight: 300; }
+
+.lay_wrap { color: #4b4a4a; height: 100%; position: relative; min-height: 700px; z-index: 2; }
+.lay_wrap .lay_main { color: #4b4a4a; position: absolute; top: 10%; width: 100%; }
+.lay_wrap .lay_foot { position: absolute; bottom: 1%; left: 0; width: 100%; z-index: 2; color: #fff; }
+.lay_wrap .lay_inner { width: 992px; margin: 0 auto; position: relative; }
+.lay-wrap .lay-area { width: 570px; height: 320px; overflow: hidden; position: relative; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+.lay-wrap .lay-area .lay-txt { font-size: 12px; position: absolute; color: #fff; background-color: #000; background-color: rgba(0,0,0,.4); bottom: 10px; left: 10px; width: 30px; height: 20px; text-align: center; line-height: 20px; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000); }
+.lay-wrap .lay-area img { display: block; width: 570px; height: 320px; }
+
+.lay-login .lay_inner .login_head { margin-bottom: 34px; }
+.lay-login .lay-wrap { position: relative; z-index: 3; }
+
+.lay_main .login_wrap { height: 320px; box-shadow: none; width: 422px; visibility: visible; top: 0px; background: transparent; border-radius: 4px; overflow: hidden; position: absolute; right: 0; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+.lay_main .login_wrap form { overflow-y: hidden !important; padding: 100px 50px 5px !important; overflow: auto; }
+.lay_wrap .lay_foot .login_device { margin: 0 auto 20px; text-align: center; }
+.lay_wrap .lay_foot .login_device li { display: inline-block; *display: inline; zoom: 1; width: 60px; text-align: center; vertical-align: top; margin: 0 5px; }
+.lay_wrap .lay_foot .login_device li a { display: block; text-decoration: none; -webkit-transition: all .3s; transition: all .3s; position: relative; z-index: 10; top: 0; }
+.lay_wrap .lay_foot .login_device li a i { font-size: 35px; }
+.lay_wrap .lay_foot .login_device li span { display: block; padding-top: 5px; }
+.lay_wrap .lay_foot .author-info { position: absolute; bottom: 3px; right: 50px; }
+.footer { background: #e9f1f5; }
+
+.lay_background { position: absolute; left: 0; top: 0; z-index: 0; overflow: hidden; }
+
+.loginform_btn { padding: 15px 0px 12px; }
+a.pop_login_btn { background: #009688; border: 1px solid #009688; width: 100%; padding: 2px 15px; position: relative; margin: 0px; margin-right: 5px; color: #fff; height: 38px; line-height: 30px; border-radius: 2px; font-weight: 400; cursor: pointer; text-decoration: none; display: inline-block; vertical-align: top; text-align: center; }
+a.pop_reg_btn { margin: 0; padding: 2px 15px; background: #5FB878; border: 1px solid #5FB878; color: #fff; height: 38px; line-height: 30px; border-radius: 2px; font-weight: 400; cursor: pointer; text-decoration: none; display: inline-block; vertical-align: top; }
+span.login_reg_center { display: inline-block; width: 30px; height: 30px; line-height: 30px; background: #fff; border-radius: 100%; text-align: center; margin: 2px 0px 0px -8px; font-size: 16px; color: #7D7979; }
+/* 捐赠 */
+.shang_box { width: 500px; height: 400px; padding: 10px; background-color: #fff; margin: 0px auto; display: none; z-index: 999; }
+.shang_box .shang_tit { width: 100%; height: 75px; text-align: center; line-height: 66px; font-size: 16px; margin-top: 7px; margin-right: 2px; }
+.shang_box .shang_payimg { width: 170px; padding: 10px; border: 6px solid #EA5F00; margin: 0 auto; border-radius: 10px; height: 170px; }
+.shang_box .shang_payimg img { display: block; text-align: center; width: 170px; height: 170px; border: none; border-width: 0; }
+.shang_box .pay_explain { text-align: center; margin: 10px auto; font-size: 12px; color: #545454; }
+.shang_box .shang_info { clear: both; }
+.shang_info p, .shang_info a { text-align: center; font-size: 12px; text-decoration: none; line-height: 2em; }
+.shang_payselect { text-align: center; margin: 0 auto; margin-top: 40px; cursor: pointer; height: 60px; width: 280px; }
+.shang_payselect .pay_item { display: inline-block; margin-right: 10px; float: left; }
+
+/* 适配多设备 */
+@media screen and (max-width: 750px) {
+    #login { padding-left: 0px; }
+    .lay_main .lay-area { display: none; }
+    .lay_main .login_wrap { height: 320px; width: 100%; visibility: visible; background: transparent; border-radius: 4px; overflow: hidden; margin: 0px 5px; margin-left: 5px; left: 0; }
+}

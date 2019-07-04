@@ -1,0 +1,45 @@
+﻿body { background: #ebebeb; position: relative; margin:0;padding:0}
+.main-navigation { min-width: 1000px; text-align: center; background: #ffffff; border-top: 1px solid #ebebeb; margin-bottom: 10px; border-bottom: 1px solid #e1e1e1; }
+.container { width: 1000px; padding: 0px 15px 0px 15px; margin-right: auto; margin-left: auto; }
+.container .layui-nav { background-color: #FFF; color: #505050; margin-left: 168px; }
+.container .layui-nav-item a { color: #505050; font-weight: 700; }
+.container .layui-nav-item a:hover { color: #f4645f; font-weight: 700;text-decoration: none; }
+.container .logo { position: static; height: 56px; float: left; }
+.container .logo img { height: 56px; }
+.carousel img { width: 100%; max-height:295px}
+
+section.main { width: 1000px; margin: 0px auto 20px; padding: 0; background-color: #fff; }
+.main h1 { font-size: 24px; font-weight: normal; color: #555; padding-left: 16px; }
+.main h2 { color: #4f4f4f; font-size: 16px; font-weight: normal; margin-top: 10px; text-align: center; }
+.main h1 .more { float: right; color: #1c80cc; font-size: 14px; text-decoration: none; vertical-align: bottom; height: 31px; display: block; line-height: 31px; }
+.main h1.right { margin-left: 40px; }
+.main #widetTitle { margin: 0; margin-top: 24px; }
+ul.widget { height: 133px; margin: 0; margin-left: 16px; margin-top: 20px; padding: 0; }
+ul.widget li { width: 222px; height: 131px; margin: 0; display: block; border: 1px solid #d7e0ec; float: left; margin-left: 24px; padding: 0; }
+ul.widget li.widgetFirst { margin-left: 0; }
+ul.widget li a { display: block; margin: 0; height: 100%; overflow: hidden; text-decoration: none;color: #337ab7; }
+.widgetIcon { width: 51px; height: 51px; margin: 28px auto 0 auto; }
+.widgetIcon i { font-size: 40px; }
+
+.news { width: 447px; float: left; margin-top: 49px; margin-left: 6px; }
+.main .newsList { width: 432px; height: 164px; margin: 0; margin-left: 16px; margin-top: 26px; padding: 0; }
+.main .newsList li { list-style: none; padding: 0; margin: 0; margin-bottom: 11px; overflow: auto; float: left; width: 100%; }
+.main .newsList li a { margin: 0; padding: 0; color: #4f4f4f; text-decoration: none; float: left; display: block; }
+.main .newsList li span { margin: 0; padding: 0; float: right; color: #a5a5a5; display: block; }
+section.spliter { width: 0; height: 225px; border-left: 1px solid #e4e4e4; float: left; margin: 0; margin-left: 47px; margin-top: 58px; }
+section.coporation { width: 480px; overflow: hidden; height: 227px; margin: 0; margin-top: 51px; float: left; }
+.coporation ul { margin: 20px 0 0 20px; width: 460px; padding: 0; *margin-left: 10px; }
+.coporation ul li { list-style: none; float: left; margin: 0 0 16px 28px; *margin-left: 21px; }
+.coporation .thumbnail { padding: 0px; border: none; margin-bottom: 0px; }
+.footer { background-color: #000; min-width: 1000px;}
+
+@media (max-width: 767px) {
+    .main-navigation { text-align: left; }
+    .main-navigation .menu li { display: block; }
+    .main-navigation .menu li:hover > a { color: #f4645f; text-decoration: none; }
+    .main-navigation .menu li ul { visibility: visible; padding: 0px 0px 0px 20px; margin: 0; position: relative; top: 0; width: 100%; opacity: 1; filter: alpha(opacity=100); }
+}
+
+@media (min-width: 768px) {
+    .nav-toggle-button { display: none; }
+}
